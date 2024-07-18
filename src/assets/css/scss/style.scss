@@ -1,3 +1,16 @@
+@charset "utf-08";
+$breakpoints: (
+  "sm": "screen and (max-width: 320px)",
+  "md": "screen and (max-width: 768px)",
+  "xl": "screen and (max-width: 1200px)",
+) !default;
+
+@mixin media($breakpoint) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
 body {
   background-color: #c4c4c4;
 }
@@ -22,11 +35,23 @@ footer {
   font-size: 14px;
   padding: 0;
   margin: 0;
+  @include media("md") {
+    font-size: 12px;
+  }
+  @include media("sm") {
+    font-size: 10px;
+  }
 }
 .card__description {
   font-size: 12px;
   padding: 0;
   margin: 0;
+  @include media("md") {
+    font-size: 10px;
+  }
+  @include media("sm") {
+    font-size: 8px;
+  }
 }
 img {
   width: 288px;
@@ -38,4 +63,5 @@ img {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  column-gap: 5%;
 }

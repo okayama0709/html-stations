@@ -1,5 +1,9 @@
 data = "global data";
 
+const returnData = () => {
+  return this.data;
+};
+
 // このreturnDataに代入される関数の形をアロー関数に変えて"global data"が表示されるようにしてください
 // ↓関数の中の処理は変更しないでください
 const returnThisData = function () {
@@ -9,7 +13,7 @@ const returnThisData = function () {
 
 const object = {
   data: "object data",
-  func: returnThisData,
+  func: returnData,
 };
 
 function getData() {

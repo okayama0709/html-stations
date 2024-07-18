@@ -1,41 +1,71 @@
 body {
   background-color: #c4c4c4;
 }
+
 header {
   background-color: #fff;
   height: 60px;
   margin-bottom: 100px;
 }
+
 footer {
   margin-top: 100px;
   background-color: #fff;
   height: 60px;
 }
+
 .card {
+  width: -moz-fit-content;
   width: fit-content;
   background-color: #fff;
   color: #282828;
   padding: 10px;
   margin-bottom: 10px;
 }
+
 .card__title {
   font-size: 14px;
   padding: 0;
   margin: 0;
 }
+@media screen and (max-width: 768px) {
+  .card__title {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .card__title {
+    font-size: 10px;
+  }
+}
+
 .card__description {
   font-size: 12px;
   padding: 0;
   margin: 0;
 }
+@media screen and (max-width: 768px) {
+  .card__description {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .card__description {
+    font-size: 8px;
+  }
+}
+
 img {
   width: 288px;
   height: 182px;
   margin-bottom: 10px;
 }
+
 .cardList {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-}
+  -moz-column-gap: 5%;
+       column-gap: 5%;
+}/*# sourceMappingURL=style.css.map */

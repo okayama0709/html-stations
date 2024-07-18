@@ -1,0 +1,35 @@
+body {
+  background-color: #c4c4c4;
+}
+header {
+  background-color: #fff;
+  height: 60px;
+  margin-bottom: 100px;
+}
+footer {
+  margin-top: 100px;
+  background-color: #fff;
+  height: 60px;
+}
+.card {
+  width: fit-content;
+  background-color: #fff;
+  color: #282828;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.card__title {
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+}
+.card__description {
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+}
+img {
+  width: 288px;
+  height: 182px;
+  margin-bottom: 10px;
+}
